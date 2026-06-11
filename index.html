@@ -919,6 +919,12 @@
     .contact-method:hover { border-color: var(--primary); background: rgba(108,99,255,0.08); transform: translateY(-4px); box-shadow: 0 8px 24px rgba(108,99,255,0.1); }
     .cm-icon { font-size: 1.5rem; }
     .cm-label { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
+    .contact-info-strip {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;
+      margin-top: 1.25rem;
+      font-size: 0.85rem; color: var(--muted);
+    }
+    .contact-info-strip span { display: flex; align-items: center; gap: 6px; }
 
     /* ============================================================
        FOOTER
@@ -1335,84 +1341,12 @@
         </div>
       </div>
     </div>
-    <!-- Card 5 — Portfolio Website -->
-    <div class="project-card reveal" data-delay="0">
-      <div class="project-thumb">
-        <div class="browser-bar">
-          <div class="browser-dot r"></div><div class="browser-dot y"></div><div class="browser-dot g"></div>
-          <div class="browser-url" style="font-size:0.65rem">portfolio-alexb.netlify.app</div>
-        </div>
-        <div class="project-screen" style="padding:0;overflow:hidden;background:#0d0d0d;">
-          <img src="https://image.thum.io/get/width/1280/crop/720/https://portfolio-alexb.netlify.app"
-            alt="Portfolio Website" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy"/>
-        </div>
-      </div>
-      <div class="project-body">
-        <div class="project-title">Portfolio Website</div>
-        <div class="project-desc">A modern, fully responsive personal portfolio built with React 19 and Vite. Features dark theme, smooth scroll navigation, animated skill bars, mobile hamburger menu, and reusable component architecture.</div>
-        <div class="tech-chips" style="margin-bottom:0.75rem">
-          <span class="chip">React 19</span><span class="chip">Vite</span><span class="chip">JavaScript</span><span class="chip">CSS3</span>
-        </div>
-        <div class="project-footer">
-          <div style="display:flex;gap:6px;flex-wrap:wrap">
-            <a href="https://portfolio-alexb.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-sm primary" style="font-size:0.75rem;padding:4px 10px;">Live ↗</a>
-          </div>
-          <a href="https://github.com/dilnadev/Portfolio-website" target="_blank" rel="noopener noreferrer" class="gh-icon-link"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <!-- Card 6 — Weather App -->
-    <div class="project-card reveal" data-delay="80">
-      <div class="project-thumb">
-        <div class="browser-bar">
-          <div class="browser-dot r"></div><div class="browser-dot y"></div><div class="browser-dot g"></div>
-          <div class="browser-url" style="font-size:0.65rem">weatherapp-dilna.netlify.app</div>
-        </div>
-        <div class="project-screen" style="padding:0;overflow:hidden;background:#0d1b2a;">
-          <img src="https://image.thum.io/get/width/1280/crop/720/https://weatherapp-dilna.netlify.app"
-            alt="Weather App" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy"/>
-        </div>
-      </div>
-      <div class="project-body">
-        <div class="project-title">Weather App</div>
-        <div class="project-desc">A responsive weather app that fetches real-time data from OpenWeather API. Search any city to view temperature, humidity, wind speed, and dynamic weather icons.</div>
-        <div class="tech-chips" style="margin-bottom:0.75rem">
-          <span class="chip">React</span><span class="chip">Vite</span><span class="chip">OpenWeather API</span>
-        </div>
-        <div class="project-footer">
-          <div style="display:flex;gap:6px;flex-wrap:wrap">
-            <a href="https://weatherapp-dilna.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-sm primary" style="font-size:0.75rem;padding:4px 10px;">Live ↗</a>
-          </div>
-          <a href="https://github.com/dilnadev/React-WeatherApp-API" target="_blank" rel="noopener noreferrer" class="gh-icon-link"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <!-- Card 7 — Password Generator -->
-    <div class="project-card reveal" data-delay="160">
-      <div class="project-thumb">
-        <div class="browser-bar">
-          <div class="browser-dot r"></div><div class="browser-dot y"></div><div class="browser-dot g"></div>
-          <div class="browser-url" style="font-size:0.65rem">pass-word-generatr.netlify.app</div>
-        </div>
-        <div class="project-screen" style="padding:0;overflow:hidden;background:#1a1a2e;">
-          <img src="https://image.thum.io/get/width/1280/crop/720/https://pass-word-generatr.netlify.app"
-            alt="Password Generator" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy"/>
-        </div>
-      </div>
-      <div class="project-body">
-        <div class="project-title">Password Generator</div>
-        <div class="project-desc">A secure random password generator built with Vanilla JS. Generates passwords with uppercase, lowercase, numbers, and special characters — with one-click copy to clipboard.</div>
-        <div class="tech-chips" style="margin-bottom:0.75rem">
-          <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">JavaScript</span>
-        </div>
-        <div class="project-footer">
-          <div style="display:flex;gap:6px;flex-wrap:wrap">
-            <a href="https://pass-word-generatr.netlify.app" target="_blank" rel="noopener noreferrer" class="btn-sm primary" style="font-size:0.75rem;padding:4px 10px;">Live ↗</a>
-          </div>
-          <a href="https://github.com/dilnadev/Password-Generator" target="_blank" rel="noopener noreferrer" class="gh-icon-link"><svg viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg></a>
-        </div>
-      </div>
-    </div>
+  </div>
+  <div style="text-align:center; margin-top: 3rem;">
+    <a href="https://github.com/dilnadev" target="_blank" rel="noopener noreferrer" class="btn-primary" style="display:inline-flex;align-items:center;gap:10px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+      View All Projects on GitHub
+    </a>
   </div>
 </section>
 
@@ -1547,11 +1481,7 @@
         </div>
       </div>
 
-      <div class="contact-methods">
-        <a href="mailto:dilnadevidas@gmail.com" class="contact-method">
-          <span class="cm-icon">📧</span>
-          <span class="cm-label">Email</span>
-        </a>
+      <div class="contact-methods" style="grid-template-columns: repeat(2, 1fr);">
         <a href="https://github.com/dilnadev" target="_blank" rel="noopener noreferrer" class="contact-method">
           <span class="cm-icon">
             <svg width="22" height="22" viewBox="0 0 24 24" fill="var(--muted)"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
@@ -1564,6 +1494,12 @@
           </span>
           <span class="cm-label">LinkedIn</span>
         </a>
+      </div>
+
+      <div class="contact-info-strip">
+        <span>📧 dilnadev09@gmail.com</span>
+        <span>📞 +91 9902665991</span>
+        <span>📍 Bangalore, India</span>
       </div>
     </div>
   </div>
