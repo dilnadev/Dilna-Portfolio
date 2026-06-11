@@ -1,1 +1,1 @@
-A modern, fully responsive developer portfolio built with pure HTML, CSS, and Vanilla JavaScript — showcasing 7 real-world projects, a working contact form powered by Web3Forms, and smooth scroll animations. Designed to create a strong professional presence for recruiters and clients.
+A modern, fully responsive developer portfolio built with pure HTML, CSS, and Vanilla JavaScript — showcasing 7 real-world projects, a working contact form powered by Web3Forms, and smooth scroll animations. 
